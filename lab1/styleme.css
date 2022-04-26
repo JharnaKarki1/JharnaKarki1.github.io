@@ -1,0 +1,33 @@
+body {
+    background-color: whitesmoke;     
+}
+h1,h3 {
+    font-family: Georgia, 'Times New Roman', Times ;
+    color: rgb(33, 150, 218); 
+}
+
+#italic{
+    font-style: italic;
+    font-size: 12px;
+}
+  
+a{
+    color: rgba(255, 0, 0, 0.423);
+    text-decoration: underline;
+  } 
+a:hover {
+    color: blue;
+    cursor: text;
+    cursor: pointer;
+  }
+
+#image{
+    position: relative;
+    height: 150px;
+    width: 100px;
+}
+
+span{
+    color: rgba(199, 199, 93, 0.975);
+    font-weight: bolder;
+}
