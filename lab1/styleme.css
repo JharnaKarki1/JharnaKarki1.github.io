@@ -10,12 +10,17 @@ h1,h3 {
     font-style: italic;
     font-size: 12px;
 }
-  
+.myDropcap{
+    color: #000;
+    font-weight:bold;
+    font-size:1.5em;
+} 
 a{
-    color: rgba(255, 0, 0, 0.423);
-    text-decoration: underline;
+    color: rgba(255, 0, 0, 0.766);
+    text-decoration: none;
   } 
 a:hover {
+    text-decoration: underline;
     color: blue;
     cursor: text;
     cursor: pointer;
@@ -25,6 +30,9 @@ a:hover {
     position: relative;
     height: 150px;
     width: 100px;
+}
+dt{
+    color: rgba(199, 199, 93, 0.975);
 }
 
 span{
