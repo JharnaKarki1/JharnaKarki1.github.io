@@ -1,0 +1,79 @@
+
+h1{
+    color: #A4A400;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 22pt;
+    font-weight: bold;
+    font-family: 'Lucida Sans Unicode', Helvetica, Arial, sans-serif;
+    letter-spacing: 0.25em;
+
+}
+pre{
+    font-family: monospace;
+}
+span{
+    background-color: #F0F0F0;
+
+}
+
+.linkColor{
+    color: #A4A400;
+}
+h4{
+    font-family: 'Lucida Sans Unicode', Helvetica, Arial, sans-serif;
+    text-decoration: underline;
+    color: #A4A400;
+    letter-spacing: 0.25em;
+}
+
+h3{
+    font-family: 'Lucida Sans Unicode', Helvetica, Arial, sans-serif;
+    color: #A4A400;
+    text-decoration: underline;
+    background-color: #F0F0F0;
+    font-size: 18pt;
+    width: max-content;
+    letter-spacing: 0.25em;
+
+}
+p {
+    font-size : 16px;
+    padding : 0;
+    margin : 0;
+    line-height : 20px;
+}
+
+
+ul.image{
+    list-style-image: url('images/pie_icon.gif');
+
+}
+
+#line{
+    text-decoration: line-through;
+}
+
+.usercomment{
+   padding-block: 10px;
+   margin-right: 35px;
+   margin-left: 35px;
+   background: #FFFFA8 ;
+   font-style: oblique;
+}
+
+#underlineColor{
+    text-decoration: underline;
+    font-style: normal;
+    color: #A4A400;
+}
+
+.right{
+    float: right;
+}
+body{
+    background: url("images/silverware.jpg"); 
+    background-attachment: fixed;
+    font-family: Georgia, Garamond, serif;
+}
+
