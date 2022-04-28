@@ -1,0 +1,52 @@
+body{
+    width: 500pt;
+    margin-left: auto;
+    margin-right: auto;
+}
+.background{
+    border: 2px outset  ;
+    border-radius: 7pt;
+    padding: 15pt;
+    margin-top: 3%;
+    background: #E0E0FF ;
+    
+}
+
+.float{
+    float: right;
+    margin-right: 25%;
+}
+     
+.inline{
+  display: inline-block ;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+legend{
+    background-color: #ffffff;
+    border: 2px solid;
+    border-color: #c5c5c5;
+    font-size: 17px;
+    font-family: sans-serif;
+}
+
+ input.button {
+    background-color: rgba(255, 131, 158, 0.884);
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+    border: 0.5px outset white;  
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 1px 1px 2px;
+ }
+
+.color{
+    color: red;
+    
+}
+a{
+    text-decoration: none;
+}
+
+  

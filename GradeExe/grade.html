@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Retrieve Grade</title>
+  <link href="grade.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+  <h1>Retrieve your grade</h1>
+  <!-- <p>Name: ...</p>
+    <p>Student ID: ...</p> Get Grade! -->
+
+  <div class="container">
+    <form action="https://mumstudents.org/params.php">
+
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name..">
+
+      <label for="studentid">Student ID</label>
+      <input type="text" id="studentid" name="studentid" placeholder="Your Student ID..">
+
+
+
+      <label for="assignment">Assignment</label>
+      <select id="assignment" name="assignment">
+        <option value="HW1">HW1</option>
+        <option value="HW2">HW2</option>
+        <option value="HW3">HW3</option>
+      </select>
+
+
+      <input type="radio"  name="entry" value="august2019"> Feb 2022
+      <input type="radio"  name="entry" value="may2019"> Nov 2021
+      <input type="radio"  name="entry" value="feb2019"> Aug 2021
+
+      <br/>
+      <br/>
+      <input type="checkbox" id="verify" name="verify">
+      <label for="verify">Please Verify,You are seeing your own grade </label>
+      <br/>
+      <br/>
+      <input class="button" type="submit" value="Show Grade">
+
+    </form>
+  </div>
+</body>
+
+</html>
