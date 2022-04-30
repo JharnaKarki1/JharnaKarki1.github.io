@@ -10,18 +10,19 @@
     height: 100%;
     float: left; 
     margin-left: 20px; 
-    margin-bottom: 5px; 
+   
 }
 #column1{
     width:300px; 
     float: right;
     font-family: helvetica,Arial;
-    margin-bottom: 5px; 
+     
     
 }
 input , button{
     border: 1px solid rgb(217, 214, 214);
     width:80%;
+    margin-bottom: 7px;
 }
 #todos{
     width: 90%;
