@@ -73,23 +73,7 @@ window.onload = function(){
         clearInterval(biggerDecorationButtonTimer);
     });
 
-    
-    const count = (()=>{
-        let counter= 0;
-        function add(){
-            counter += 1;
-        }
-
-        function reset() {
-            counter = 0;
-        }
-
-        return {
-            add:add,
-            reset:reset
-        }
-    })();
-
+   
 
 
 }
