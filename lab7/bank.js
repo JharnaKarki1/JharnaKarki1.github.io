@@ -1,55 +1,68 @@
-window.onload = init;
+class BankAccount{
+    #accountName;
+    #deposit;
+   
+    static bankInfoList = [];
+    static index = 0;
+    static s="";
 
-var accountInfoList = [];
-var accountname, amount;
-
-// function Account(accountname, amount) {
-//     this.accountname = accountname;
-//     this.amount = amount;
-// }
-class Account {
-    constructor(accountname, amount) {
-        this.accountname = accountname;
-        this.amount = amount;
+    constructor(accountName, deposit) {
+        this.#accountName= accountName;
+        this.#deposit = deposit;
+       
     }
-}
-
-var createAccount = function () {
-
-    function information(name, amount) {
-        var acc = new Account(name, amount);
-        accountInfoList.push(acc);
-        printinformation();
-    }
-
-    function newaccount(accountname, deposit) {
-
-        information(accountname, deposit);
-    }
-
-
-    function printinformation() {
-        var pp = "";
-
-        for (var i = 0; i < accountInfoList.length; i++) {
-            pp += "Account Name :  " + accountInfoList[i].accountname + "    Balance : " + accountInfoList[i].amount + "\n";
+    toJSON() {
+        return {
+            "accountName": this.#accountName,
+            "balance": this.#deposit
         }
-
-        document.getElementById("data").value = pp;
+        
     }
+    
 
-    return {
-        accountdetails: function () {
-            var accountname = document.getElementById("accountname").value;
-            var deposit = document.getElementById("deposit").value;
-            newaccount(accountname, deposit);
-        }
+    static createAccount() {
+        
+        var accountName = document.getElementById("accountName").value;
+        var deposit = document.getElementById("deposit").value;
+        BankAccount.bankInfoList[BankAccount.index] = new BankAccount(accountName, deposit).toJSON();
+
+        BankAccount.s += "Account name: "+
+            BankAccount.bankInfoList[BankAccount.index].accountName +
+            " Balance: "+ BankAccount.bankInfoList[BankAccount.index].balance + "\n";
+        BankAccount.index++;
+        document.getElementById("textArea").value = BankAccount.s;
+       
+        sessionStorage.setItem("list", JSON.stringify(BankAccount.bankInfoList)); 
+       
     }
-};
-
-function init() {
-    var button = document.getElementById("button");
-    var acc1 = createAccount();
-    button.onclick = acc1.accountdetails;
 
 }
+function openDebit() {
+    
+    window.open("debit.html");
+    
+}
+function openDeposit() {
+    window.open("deposit.html");
+}
+
+function attachEvents() {
+    var x = "";
+    var button = document.getElementById("newAccount");
+    var depositBtn = document.getElementById("depositButton");
+    var debitBtn = document.getElementById("debitButton");
+    button.onclick = BankAccount.createAccount;
+    debitBtn.onclick = openDebit;
+    depositBtn.onclick = openDeposit;
+    var list = JSON.parse(sessionStorage.getItem("list"));
+    for (let i = 0; i < list.length; i++){
+        x += "Account name: "+
+        list[i].accountName +
+            " Balance: "+ list[i].balance + "\n";
+        
+    }
+    document.getElementById("textArea").value = x;
+}
+
+
+window.onload = attachEvents;

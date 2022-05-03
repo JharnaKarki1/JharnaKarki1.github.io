@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Banking Account</title>
-    <script src="bank.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="bank.js" type="text/javascript"></script>
+    <title>Bank Account Application</title>
 </head>
-
 <body>
-    Account Name: <input type="text" id="accountname" required>
-    <br>
-    <br>
+    <label for="">
+        Account Name:
+        <input type="text" id="accountName">
+    </label> <br>
+    <label for="">
+        Deposit:
+        <input type="text" id="deposit">
+    </label> <br>
+    <button id="newAccount">Create new account</button> <br>
+    <textarea name="" id="textArea" cols="50" rows="10"></textarea><br>
+    <button id="depositButton">Deposit</button> 
+    <button id="debitButton">Debit</button> 
+   
 
-    Deposit: <input type="number" id="deposit" required>
-    <br>
-    <br>
-
-    <button id="button" >Create New Account</button>
-    <br>
-    <br>
-
-    <textarea rows="20" cols="100"  id="data"></textarea>
+    
 </body>
- </html>
+</html>
