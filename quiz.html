@@ -1,18 +1,47 @@
-<!DOCTYPE html>
-<html>
-   <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
-        $(document).ready(function(){
-        $("div h1").css("color","red");
-         });
-    </script>
-    </head>
-        <body>
-            <h1>abc</h1><br><div>
-                <h1>div-1</h1>
-                <h1>div-2</h1>
-                </div>
-                <h1>xyz</h1>
-         </body>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>eq demo</title>
+  <style>
+  div {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    float: left;
+    border: 2px solid blue;
+  }
+  .blue {
+    background: blue;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+  <h1>Shopping Cart</h1> <ul> 
+    <li> Shirt <button>Delete</button> </li>
+      <li> Tie <button>Delete</button> </li>
+        <li> Jacket <button>Delete</button> </li>
+    <li> Hat <button>Delete</button></li>
+   </ul> 
+    
+   
+      
+        
+<script>
+(function() { 
+function DeleteItem() { 
+   
+$this.parent().remove();
+ 
+  
+}
+
+$(document).ready( function() { 
+$("button").click (DeleteItem);
+ });
+ })(); 
+
+</script>
+ 
+</body>
 </html>

@@ -1,0 +1,20 @@
+doctype html
+html
+    head
+        title=title
+        style 
+            include style.css
+        script 
+    body
+        div
+            h1 The Number Quiz
+            
+            p Your current score is #{score}
+            p Guess the next number in the sequence 
+            p #{question}
+              
+
+            form(action="/checker" method="post")
+                label Your Answer:
+                input(name="useranswer" type="text", size="3") 
+                input(type="submit" value="submit")
