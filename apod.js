@@ -1,5 +1,5 @@
 $(document).ready(
-    function () {
+    function () {    
     $("#view_button").click(getPicture);
  });
 
@@ -15,6 +15,7 @@ $(document).ready(
     });
 };
     function showPicture(data) {   
+        console.log(data.url);
     $("#pic").attr("src", data.url); 
     $("h2").text(data.title);
     };
