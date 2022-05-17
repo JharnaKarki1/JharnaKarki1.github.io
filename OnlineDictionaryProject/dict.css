@@ -1,0 +1,54 @@
+body {
+  background-color: rgb(255, 255, 255);
+  margin: auto;
+}
+
+#header {
+  background-color: rgb(184, 184, 184);
+  margin: auto;
+  width: 100%;
+  padding: 1px 1px 1px 15px;
+  color: rgb(0, 0, 0);
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.content {
+  width: 100%;
+  margin: auto;
+  padding:5px;
+  padding-left:13px;
+  background-color: rgb(238, 237, 237);
+  
+}
+
+
+.content form {
+  font-size: 20px;
+}
+
+input{
+    height: 15px;
+}
+
+#search{
+    padding:1px;
+    height: 25px;
+    width: 70px;
+}
+
+li {
+  
+  position: relative;
+  top: 10px;
+  list-style-type: none;
+  margin: 10px 0;
+}
+
+.footer{
+  position: fixed;
+
+  right: 0;
+  bottom: 0;
+  
+  float:right;
+}
